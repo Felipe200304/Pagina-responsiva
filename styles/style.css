@@ -107,6 +107,26 @@ body {
     font-weight: 400;
 }
 
+@media(max-width: 1188px){
+
+    .cabecalho{
+        padding: 8%;
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        padding: 5%;
+        flex-direction: column-reverse ;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}
+
 /* Ajustes para dispositivos com largura máxima de 768px */
 @media (max-width: 768px) {
     .cabecalho {
@@ -121,7 +141,7 @@ body {
 
     .apresentacao {
         padding: 3%;
-        flex-direction: column; /* Coloca o conteúdo e a imagem em coluna */
+        flex-direction: column-reverse ; /* Coloca o conteúdo e a imagem em coluna */
         align-items: center; /* Centraliza o conteúdo */
     }
 
