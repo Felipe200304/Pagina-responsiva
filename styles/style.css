@@ -107,22 +107,31 @@ body {
     font-weight: 400;
 }
 
-@media(max-width: 1188px){
-
-    .cabecalho{
-        padding: 8%;
-    }
-
-    .cabecalho__menu{
-        justify-content: center;
-    }
-
-    .apresentacao{
+/* Ajustes para dispositivos com largura máxima de 768px */
+@media (max-width: 768px) {
+    .cabecalho {
         padding: 5%;
-        flex-direction: column-reverse ;
+        text-align: center; /* Centraliza o texto */
     }
 
-    .apresentacao__conteudo{
-        width: auto;
+    .cabecalho__menu {
+        flex-direction: column; /* Coloca os links um embaixo do outro */
+        align-items: center; /* Centraliza os itens no menu */
+    }
+
+    .apresentacao {
+        padding: 3%;
+        flex-direction: column; /* Coloca o conteúdo e a imagem em coluna */
+        align-items: center; /* Centraliza o conteúdo */
+    }
+
+    .apresentacao__conteudo {
+        width: 90%; /* Limita a largura do conteúdo */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .apresentacao__imagem {
+        max-width: 100%; /* Garante que a imagem não ultrapasse a tela */
+        height: auto; /* Mantém a proporção da imagem */
     }
 }
